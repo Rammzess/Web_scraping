@@ -20,7 +20,6 @@ for post in posts:
     post_id = int(post_url.split('/')[-2])
     post_date = post_date.split(', ')[-1]
 
-#    извлекаем хабы поста
     hubs = post.find_all('category')
     for hub in hubs:
        corrected_hub = hub.string.lower()
